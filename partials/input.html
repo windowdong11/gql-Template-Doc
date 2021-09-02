@@ -1,0 +1,9 @@
+<ul>
+  {{#each inputFields}}
+  <li>
+    <h3>{{name}} : {{> TypeRef}}{{#if defaultValue}} = {{defaultValue}}{{/if}}</h3>
+    {{> Description}}
+    {{> Directives}}
+  </li>
+  {{/each}}
+</ul>

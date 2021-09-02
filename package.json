@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "graphql": "^15.5.1",
+    "handlebars": "^4.7.7",
+    "node": "^16.6.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/handlebars": "^4.1.0",
+    "@types/node": "^16.7.4"
+  },
+  "name": "handlebars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

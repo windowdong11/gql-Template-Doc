@@ -1,0 +1,17 @@
+{{#if directives}}
+  <div>
+    <h3>Directives</h3>
+    <ul>
+      {{#each directives}}
+        <li>
+          <div>{name}</div>
+          <ul>
+            {{#each contents}}
+              <li>{{content}}</li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}
