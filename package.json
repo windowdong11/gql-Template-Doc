@@ -1,14 +1,15 @@
 {
   "dependencies": {
-    "graphql": "^15.5.1",
+    "gqlinspector-core": "^1.0.5",
+    "graphql": "^15.5.3",
     "handlebars": "^4.7.7",
     "node": "^16.6.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.2"
   },
   "devDependencies": {
     "@types/graphql": "^14.5.0",
     "@types/handlebars": "^4.1.0",
-    "@types/node": "^16.7.4"
+    "@types/node": "^16.7.10"
   },
   "name": "handlebars",
   "version": "1.0.0",
