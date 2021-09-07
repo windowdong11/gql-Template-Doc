@@ -49,7 +49,7 @@ function buildHTML(filename: fs.PathOrFileDescriptor, data: SchemaData | ParsedI
 function main(src: fs.PathOrFileDescriptor, destination: fs.PathOrFileDescriptor, data: SchemaData | ParsedIntrospectionType) {
     const html = buildHTML(src, data);
     fs.writeFile(destination, html, function (err) {
-        if (err) return console.log(err);
+        if (err) throw err
     });
 }
 
