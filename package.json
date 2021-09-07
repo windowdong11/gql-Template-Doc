@@ -13,13 +13,32 @@
     "@types/node": "^16.7.10",
     "@types/yargs": "^17.0.2"
   },
-  "name": "handlebars",
+  "name": "gql-template-doc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "gql-template-doc": "lib/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "windowdong11",
+  "license": "MIT",
+  "description": "For templating and generate GraphQL schema document.",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windowdong11/gql-Template-Doc.git"
+  },
+  "keywords": [
+    "graphql",
+    "graphql-document",
+    "graphql-document-template"
+  ],
+  "bugs": {
+    "url": "https://github.com/windowdong11/gql-Template-Doc/issues"
+  },
+  "homepage": "https://github.com/windowdong11/gql-Template-Doc#readme"
 }
