@@ -57,21 +57,21 @@ function main(src: fs.PathOrFileDescriptor, destination: fs.PathOrFileDescriptor
 (async () => {
     const argv = await yargs(process.argv.slice(2))
     .options({
-        e: { type: 'string', alias: 'endpoint', demandOption: true },
-        o: { type: 'string', alias: 'output', default: './src'},
-        pb: { type: 'string', alias: 'partialBaseDir', default: './partials/'},
-        tb: { type: 'string', alias: 'templateBaseDir', default: './templates/'},
+        endpoint: { type: 'string', alias: 'e', demandOption: true },
+        output: { type: 'string', alias: 'o', default: './src'},
+        partialBaseDir: { type: 'string', alias: 'pb', default: './partials/'},
+        templateBaseDir: { type: 'string', alias: 'tb', default: './templates/'},
         // No Need(Maybe)
         // r: { type: 'string', alias: 'root', default: 'Index.html'},
-        t: { type: 'string', alias: 'type', default: 'Type.html'},
+        type: { type: 'string', alias: 't', default: 'Type.html'},
         // TODO : Add field page generator method, then enable 'f' option
         // f: { type: 'string', alias: 'field', default: 'Field.html'}
     }).argv;
-    const endpoint = argv.e
-    const baseDir = argv.o
+    const endpoint = argv.endpoint
+    const baseDir = argv.output
     // BaseDir shouldn't be ends with '/'
-    const partialBaseDir = argv.pb.endsWith('/') ? argv.pb.slice(0, -1) : argv.pb
-    const templateBaseDir = argv.tb.endsWith('/') ? argv.tb.slice(0, -1) : argv.tb
+    const partialBaseDir = argv.partialBaseDir.endsWith('/') ? argv.partialBaseDir.slice(0, -1) : argv.partialBaseDir
+    const templateBaseDir = argv.templateBaseDir.endsWith('/') ? argv.templateBaseDir.slice(0, -1) : argv.templateBaseDir
     const typeTemplate = argv.t
     console.log('[Generate GQLDocs]')
     console.log(`Endpoint: ${endpoint}`)
