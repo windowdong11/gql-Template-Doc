@@ -59,8 +59,8 @@ function main(src: fs.PathOrFileDescriptor, destination: fs.PathOrFileDescriptor
     .options({
         endpoint: { type: 'string', alias: 'e', demandOption: true },
         output: { type: 'string', alias: 'o', default: './src'},
-        partialBaseDir: { type: 'string', alias: 'pb', default: './partials/'},
-        templateBaseDir: { type: 'string', alias: 'tb', default: './templates/'},
+        partialBaseDir: { type: 'string', alias: 'pb', default: './partials'},
+        templateBaseDir: { type: 'string', alias: 'tb', default: './templates'},
         // No Need(Maybe)
         // r: { type: 'string', alias: 'root', default: 'Index.html'},
         type: { type: 'string', alias: 't', default: 'Type.html'},
