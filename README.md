@@ -29,3 +29,10 @@ gql-template-doc -e=<endpoint> [--options]
 |          |       | --pb, --partialBaseDir  | "./partials"  | Partials directory.                     |
 |          |       | --tb, --templateBaseDir | "./templates" | Templates directory.                    |
 |          |       | -t, --type              | "Type.html"   | Type template file name.                |
+
+## How does it works?
+
+1. Register partials in `--partialBaseDir`.  
+2. Get schema from `--endpoint` and parse it with `gqlinspector-core`.  
+3. Render templates in `--templateBaseDir` except type template file.(file name : `--type`)  
+4. Render each types in parsed result using type template file.(file name: `--type`)  
