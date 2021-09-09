@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "gqlinspector-core": "^1.0.8",
+    "gqlinspector-core": "^1.0.9",
     "graphql": "^15.5.3",
     "handlebars": "^4.7.7",
     "node": "^16.6.1",
