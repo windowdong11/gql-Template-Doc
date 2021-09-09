@@ -4,7 +4,7 @@
     <li>
       <h3>{{name}}
           {{#each args}}{{#if @first}} ({{/if}}{{name}} : {{> TypeRef}}{{#if @last}}) : {{else}}, {{/if}}
-          {{/each}}
+          {{/each}}{{> TypeRef}}
       </h3>
       {{> Description}}
       {{> Directives}}
