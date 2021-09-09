@@ -15,7 +15,7 @@
     "@types/yargs": "^17.0.2"
   },
   "name": "gql-template-doc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/index.js",
   "bin": {
     "gql-template-doc": "lib/index.js"
