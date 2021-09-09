@@ -1,0 +1,22 @@
+
+<ul>
+  {{#each fields}}
+    <li>
+      <h3>{{name}}
+          {{#each args}}{{#if @first}} ({{/if}}{{name}} : {{> TypeRef}}{{#if @last}}) : {{else}}, {{/if}}
+          {{/each}}
+      </h3>
+      {{> Description}}
+      {{> Directives}}
+      <ul>
+        {{#each args}}
+          <li>
+            <h4>{{name}} : {{> TypeRef}}</h4>
+            {{> Description}}
+            {{> Directives}}
+          </li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>
