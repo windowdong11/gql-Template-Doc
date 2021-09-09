@@ -79,7 +79,7 @@ function main(src: fs.PathOrFileDescriptor, destination: fs.PathOrFileDescriptor
     if (argv.sample) {
         copyDirectory(path.join(__dirname, '../sample'), process.cwd(), {overwrite: true})
         console.log('Example templates and partials generated.')
-        console.log('Run gql-inspector-doc -e https://api.spacex.land/graphql/ to generate example document.')
+        console.log('Run "gql-template-doc -e https://api.spacex.land/graphql/" to generate example document.')
     }
     else if (argv.endpoint) {
         const endpoint = argv.endpoint
